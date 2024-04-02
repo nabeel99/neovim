@@ -77,14 +77,15 @@ return {
 
   -- { import = "astrocommunity.git.git-blame-nvim" },
 
-  { import = "astrocommunity.colorscheme.nightfox",        enabled = false },
-  { import = "astrocommunity.colorscheme.kanagawa",        enabled = false },
-  { import = "astrocommunity.colorscheme.rose-pine",       enabled = false },
-  { import = "astrocommunity.colorscheme.everforest" },
-  { import = "astrocommunity.colorscheme.mini-base16" },
+  { import = "astrocommunity.colorscheme.vscode-nvim" },
+  -- { import = "astrocommunity.colorscheme.nightfox",        enabled = false },
+  -- { import = "astrocommunity.colorscheme.kanagawa",        enabled = false },
+  -- { import = "astrocommunity.colorscheme.rose-pine",       enabled = false },
+  -- { import = "astrocommunity.colorscheme.everforest" },
+  -- { import = "astrocommunity.colorscheme.mini-base16" },
   -- { import = "astrocommunity.colorscheme.onigiri" },
   -- { import = "astrocommunity.colorscheme.tokyonight" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
   {
     -- further customize the options set by the community
     "catppuccin",
