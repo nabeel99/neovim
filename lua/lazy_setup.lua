@@ -8,17 +8,15 @@ require("lazy").setup({
       maplocalleader = ",", -- This ensures the localleader key must be configured before Lazy is set up
       icons_enabled = true, -- Set to false to disable icons (if no Nerd Font is available)
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
-      ui_notifications_enabled = false
     },
   },
   { import = "community" },
   { import = "plugins" },
 } --[[@as LazySpec]], {
   -- Configure any other `lazy.nvim` configuration options here
-  install = { colorscheme = { "vim-code-dark", "astrodark", "habamax" } },
-  ui = { 
-      backdrop = 100, 
-      ui_notifications_enabled = false
+  install = { colorscheme = { "vscode-nvim", "vim-code-dark", "astrodark", "habamax" } },
+  ui = {
+      backdrop = 100,
     },
   performance = {
     rtp = {
