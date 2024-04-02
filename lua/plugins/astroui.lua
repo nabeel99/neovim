@@ -9,7 +9,8 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
+    colorscheme = "vscode-nvim",
+    -- colorscheme = "astrodark",
     -- colorscheme = "vim-code-dark",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
