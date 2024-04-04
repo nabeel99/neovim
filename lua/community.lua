@@ -36,7 +36,7 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.angular" },
-  { import = "astrocommunity.pack.haskel" },
+  -- { import = "astrocommunity.pack.haskel" },
   { import = "astrocommunity.pack.wgsl" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
@@ -74,6 +74,7 @@ return {
   -- { import = "astrocommunity.motion.mini-basics" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.flit-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.mini-bracketed" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.portal-nvim" },
@@ -107,8 +108,8 @@ return {
   { import = "astrocommunity.colorscheme.rose-pine",       enabled = false },
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.mini-base16" },
-  { import = "astrocommunity.colorscheme.onigiri" },
-  { import = "astrocommunity.colorscheme.tokyonight" },
+  -- { import = "astrocommunity.colorscheme.onigiri" },
+  -- { import = "astrocommunity.colorscheme.tokyonight" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
     -- further customize the options set by the community
