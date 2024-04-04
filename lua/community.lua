@@ -43,6 +43,8 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.pack.scala" },
+  { import = "astrocommunity.pack.typst" },
+  { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.edgedb" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.proto" },
