@@ -89,6 +89,8 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
 
   { import = "astrocommunity.debugging.nvim-bqf" },
 
