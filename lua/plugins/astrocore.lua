@@ -43,6 +43,7 @@ return {
       -- first key is the mode
       i = {
         ["jj"] = "<ESC>",
+        -- ["jj"] = { "<ESC>", desc = "Escape from insert mode", opts = { noremap = true, silent = true, expr = false, timeout = 300 } },
       },
       n = {
         -- second key is the lefthand side of the map
