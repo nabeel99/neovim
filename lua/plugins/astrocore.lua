@@ -41,13 +41,15 @@ return {
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
       -- first key is the mode
+      i = {
+        ["jj"] = "<ESC>",
+      },
       n = {
         -- second key is the lefthand side of the map
 
         -- navigate buffer tabs
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
-
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
