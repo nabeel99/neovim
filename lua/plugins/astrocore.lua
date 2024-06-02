@@ -51,6 +51,79 @@ return {
         -- navigate buffer tabs
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+
+        -- Directory navigation
+        -- ["]f"] = {
+        --   function() require("astrocore.buffer").next_file_in_directory() end, desc = "Next file in directory"
+        -- },
+        -- ["[f"] = {
+        --   function() require("astrocore.buffer").prev_file_in_directory() end, desc = "Previous file in directory"
+        -- },
+
+        -- Buffer actions
+        ["<Leader>bc"] = {
+          function() require("astrocore.buffer").close_left() end, desc = "Close buffers to the left"
+        },
+        -- ["<Leader>bo"] = {
+        --   function() require("astrocore.buffer").close_all(false) end, desc = "Close other buffers"
+        -- },
+        ["<Leader>br"] = {
+          function() require("astrocore.buffer").close_right() end, desc = "Close buffers to the right"
+        },
+        ["<Leader>bn"] = {
+          function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Cycle to next buffer"
+        },
+        ["<Leader>bp"] = {
+          function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Cycle to previous buffer"
+        },
+        ["<Leader>bg"] = {
+          function() require("astrocore.buffer").nav_to(vim.v.count1) end, desc = "Go to buffer"
+        },
+        ["<Leader>bl"] = {
+          function() require("astrocore.buffer").close_tab() end, desc = "Close buffer group"
+        },
+        ["<Leader>bL"] = {
+          function() require("astrocore.buffer").close_all(true) end, desc = "Toggle buffer group"
+        },
+        ["<Leader>bm"] = {
+          function() require("astrocore.buffer").move(1) end, desc = "Move buffer next"
+        },
+        ["<Leader>bb"] = {
+          function() require("astrocore.buffer").move(-1) end, desc = "Move buffer previous"
+        },
+        ["<Leader>bpk"] = {
+          function() require("astrocore.buffer").prev() end, desc = "Pick buffer"
+        },
+        ["<Leader>bP"] = {
+          function() require("astrocore.buffer").wipe() end, desc = "Pick and close buffer"
+        },
+        -- ["<Leader>bsd"] = {
+        --   function() require("astrocore.buffer").sort("directory") end, desc = "Sort buffers by directory"
+        -- },
+        -- ["<Leader>bse"] = {
+        --   function() require("astrocore.buffer").sort("extension") end, desc = "Sort buffers by extension"
+        -- },
+        -- ["<Leader>bsr"] = {
+        --   function() require("astrocore.buffer").sort("relative_directory") end, desc = "Sort buffers by relative directory"
+        -- },
+
+        -- ["<Leader>bc"] = { "<Cmd>BufferLineCloseLeft<CR>", desc = "Close buffers to the left" },
+        ["<Leader>bo"] = { "<Cmd>BufferLineCloseOthers<CR>", desc = "Close other buffers" },
+        -- ["<Leader>br"] = { "<Cmd>BufferLineCloseRight<CR>", desc = "Close buffers to the right" },
+        -- ["<Leader>bn"] = { "<Cmd>BufferLineCycleNext<CR>", desc = "Cycle to next buffer" },
+        -- ["<Leader>bp"] = { "<Cmd>BufferLineCyclePrev<CR>", desc = "Cycle to previous buffer" },
+        -- ["<Leader>bg"] = { "<Cmd>BufferLineGoToBuffer<CR>", desc = "Go to buffer" },
+        -- ["<Leader>bx"] = { "<Cmd>BufferLineGroupClose<CR>", desc = "Close buffer group" },
+        -- ["<Leader>bt"] = { "<Cmd>BufferLineGroupToggle<CR>", desc = "Toggle buffer group" },
+        -- ["<Leader>bm"] = { "<Cmd>BufferLineMoveNext<CR>", desc = "Move buffer next" },
+        -- ["<Leader>bk"] = { "<Cmd>BufferLineMovePrev<CR>", desc = "Move buffer previous" },
+        -- ["<Leader>bpick"] = { "<Cmd>BufferLinePick<CR>", desc = "Pick buffer" },
+        -- ["<Leader>bpc"] = { "<Cmd>BufferLinePickClose<CR>", desc = "Pick and close buffer" },
+        ["<Leader>bsd"] = { "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort buffers by directory" },
+        ["<Leader>bse"] = { "<Cmd>BufferLineSortByExtension<CR>", desc = "Sort buffers by extension" },
+        ["<Leader>bsrd"] = { "<Cmd>BufferLineSortByRelativeDirectory<CR>", desc = "Sort buffers by relative directory" },
+
+
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
@@ -63,7 +136,7 @@ return {
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
-        -- ["<Leader>b"] = { desc = "Buffers" },
+        ["<Leader>b"] = { desc = "Buffers" },
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
@@ -71,3 +144,5 @@ return {
     },
   },
 }
+
+
