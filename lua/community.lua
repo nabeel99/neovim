@@ -58,8 +58,22 @@ return {
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.html-css" },
 
+  --
+  --
+-- cinnamon-nvim
+-- mini-animate
+-- README.md
+-- init.lua
+-- neoscroll-nvim
+-- nvim-scrollbar
+-- satellite-nvim
+-- vim-smoothie
+  -- { import = "astrocommunity.scrolling.vim-smoothie" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
   -- { import = "astrocommunity.scrolling.cinnamon-nvim" },
+  -- { import = "astrocommunity.scrolling.neoscroll-nvim" },
+  -- { import = "astrocommunity.scrolling.nvim-scrollbar" },
+  -- { import = "astrocommunity.scrolling.satellite-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
 
 
@@ -99,7 +113,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   { import = "astrocommunity.media.pets-nvim" },
-  { import = "astrocommunity.media.image-nvim" },
+  -- { import = "astrocommunity.media.image-nvim" },
 
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   --
