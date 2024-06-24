@@ -101,6 +101,8 @@ return {
   { import = "astrocommunity.media.pets-nvim" },
   { import = "astrocommunity.media.image-nvim" },
 
+  { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
+  --
   -- { import = "astrocommunity.note-taking.neorg" },
 
   -- { import = "astrocommunity.git.git-blame-nvim" },
