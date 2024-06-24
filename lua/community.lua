@@ -59,15 +59,6 @@ return {
   { import = "astrocommunity.pack.html-css" },
 
   --
-  --
--- cinnamon-nvim
--- mini-animate
--- README.md
--- init.lua
--- neoscroll-nvim
--- nvim-scrollbar
--- satellite-nvim
--- vim-smoothie
   -- { import = "astrocommunity.scrolling.vim-smoothie" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
   -- { import = "astrocommunity.scrolling.cinnamon-nvim" },
