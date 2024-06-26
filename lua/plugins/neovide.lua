@@ -1,5 +1,14 @@
 if vim.g.neovide then
+  vim.keymap.set('n', '<D-s>', ':w<CR>') -- Save
+  vim.keymap.set('v', '<D-c>', '"+y') -- Copy
+  vim.keymap.set('n', '<D-v>', '"+P') -- Paste normal mode
+  vim.keymap.set('v', '<D-v>', '"+P') -- Paste visual mode
+  vim.keymap.set('c', '<D-v>', '<C-R>+') -- Paste command mode
+  vim.keymap.set('i', '<D-v>', '<ESC>l"+Pli') -- Paste insert mode
+
+
     -- Put anything you want to happen only in Neovide here
+  vim.g.neovide_transparency = 1
   -- vim.g.neovide_transparency = 0.8
 
   -- Sets how long the scroll animation takes to complete, measured in seconds. 
@@ -35,3 +44,12 @@ if vim.g.neovide then
   -- vim.g.neovide_scroll_animation_far_lines = 1
   -- vim.g.neovide_hide_mouse_when_typing = false
 end
+
+
+
+
+-- Allow clipboard copy paste in neovim
+vim.api.nvim_set_keymap('', '<D-v>', '+p<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('!', '<D-v>', '<C-R>+', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('t', '<D-v>', '<C-R>+', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<D-v>', '<C-R>+', { noremap = true, silent = true})
