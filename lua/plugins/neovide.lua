@@ -6,6 +6,9 @@ if vim.g.neovide then
   vim.keymap.set('c', '<D-v>', '<C-R>+') -- Paste command mode
   vim.keymap.set('i', '<D-v>', '<ESC>l"+Pli') -- Paste insert mode
 
+  -- Open neovide by default at this path
+  local default_path = vim.fn.expand("~/Desktop/dev")
+  vim.api.nvim_set_current_dir(default_path)
 
     -- Put anything you want to happen only in Neovide here
   vim.g.neovide_transparency = 1
