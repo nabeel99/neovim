@@ -17,3 +17,7 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- My custom stuff
+require('mappings.my_custom_commands').setup()
+
