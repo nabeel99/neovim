@@ -140,6 +140,28 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+
+      ["<Leader>lc"] = {
+          ["m"] = { "<Cmd>Leet<CR>", desc = "Open LeetCode menu dashboard" },
+          ["x"] = { "<Cmd>Leet exit<CR>", desc = "Exit LeetCode plugin" },
+          ["c"] = { "<Cmd>Leet console<CR>", desc = "Open console for current question" },
+          ["i"] = { "<Cmd>Leet info<CR>", desc = "Show information about the current question" },
+          ["t"] = { "<Cmd>Leet tabs<CR>", desc = "List all open question tabs" },
+          ["y"] = { "<Cmd>Leet yank<CR>", desc = "Yank the current solution" },
+          ["l"] = { "<Cmd>Leet lang<CR>", desc = "Change language for current question" },
+          ["r"] = { "<Cmd>Leet run<CR>", desc = "Run the current question" },
+          ["s"] = { "<Cmd>Leet submit<CR>", desc = "Submit the current question" },
+          ["a"] = { "<Cmd>Leet random<CR>", desc = "Open a random question" },
+          ["d"] = { "<Cmd>Leet daily<CR>", desc = "Open today's question" },
+          ["p"] = { "<Cmd>Leet list<CR>", desc = "Open problem list picker" },
+          ["o"] = { "<Cmd>Leet open<CR>", desc = "Open current question in browser" },
+          ["re"] = { "<Cmd>Leet reset<CR>", desc = "Reset current question to default" },
+          ["la"] = { "<Cmd>Leet last_submit<CR>", desc = "Retrieve last submitted code" },
+          ["ro"] = { "<Cmd>Leet restore<CR>", desc = "Restore default question layout" },
+          ["in"] = { "<Cmd>Leet inject<CR>", desc = "Re-inject code for current question" },
+          -- Additional commands for session, cookie, and cache handling can also be added similarly
+        },
       },
     },
   },
