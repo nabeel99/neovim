@@ -52,6 +52,7 @@ return {
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
+        -- Added by me --
         -- Directory navigation
         -- ["]f"] = {
         --   function() require("astrocore.buffer").next_file_in_directory() end, desc = "Next file in directory"
@@ -122,6 +123,7 @@ return {
         ["<Leader>bsd"] = { "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort buffers by directory" },
         ["<Leader>bse"] = { "<Cmd>BufferLineSortByExtension<CR>", desc = "Sort buffers by extension" },
         ["<Leader>bsrd"] = { "<Cmd>BufferLineSortByRelativeDirectory<CR>", desc = "Sort buffers by relative directory" },
+        -- Added by me Ending--
 
 
         -- mappings seen under group name "Buffer"
