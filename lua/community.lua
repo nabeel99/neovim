@@ -253,11 +253,7 @@ return {
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
-  {
-    "m4xshen/smartcolumn.nvim",
-    opts = {
-      -- colorcolumn = "120",
-      disabled_filetypes = { "help" },
-    },
-  },
 }
+
+
+
