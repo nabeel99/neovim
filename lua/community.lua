@@ -20,6 +20,7 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.java" },
