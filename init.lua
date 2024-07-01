@@ -20,4 +20,3 @@ require "polish"
 
 -- My custom stuff
 require('mappings.my_custom_commands').setup()
-
