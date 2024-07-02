@@ -20,7 +20,9 @@ local rust_cmds = {
     s = {":RustLsp ssr<CR>", 'Structural search replace'},
     g = {":RustLsp crateGraph<CR>", 'Crate graph'},
     S = {":RustLsp syntaxTree<CR>", 'Syntax tree'},
-    f = {":RustLsp flyCheck<CR>", 'Fly check'},
+    fc = {":RustLsp flyCheck<CR>", 'Fly check'},
+    ff = {":RustFmt<CR>", 'Format file'},
+    fr = {":RustFmt Range<CR>", 'Format Range'},
     v = {":RustLsp view hir<CR>", 'View HIR'},
     V = {":RustLsp view mir<CR>", 'View MIR'},
 }
