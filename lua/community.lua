@@ -59,6 +59,11 @@ return {
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.html-css" },
 
+-- lua/astrocommunity/code-runner
+  { import = "astrocommunity.code-runner.compiler-nvim" },
+  { import = "astrocommunity.code-runner.executor-nvim" },
+  { import = "astrocommunity.code-runner.sniprun" },
+
   --
   -- { import = "astrocommunity.scrolling.vim-smoothie" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
