@@ -1,5 +1,3 @@
-require("mappings.my_custom_commands").setup()
-
 return {
   {
     'mg979/vim-visual-multi',
