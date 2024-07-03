@@ -6,6 +6,7 @@ function M.setup()
   local rust_cmds = require("mappings.rust")
   local leetcode_cmds = require("mappings.leetcode")
   local telescope_cmds = require("mappings.telescope")
+  local visual_multi_cmds = require("mappings.visual-multicursor")
 
   local main_menu = {
     k = { -- This is the key for the top-level menu
@@ -13,6 +14,7 @@ function M.setup()
       k = rust_cmds,  -- Submenu for Rust commands
       l = leetcode_cmds,  -- Submenu for LeetCode commands
       t = telescope_cmds,  -- Submenu for Telescope commands
+      v = visual_multi_cmds,  -- Submenu for Visual Multi commands
     }
   }
 
