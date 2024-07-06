@@ -78,7 +78,8 @@ return {
   { import = "astrocommunity.lsp.nvim-lsp-file-operations" },
   -- { import = "astrocommunity.lsp.nvim-lsp-endhints" },
   { import = "astrocommunity.lsp.nvim-lint" },
-  { import = "astrocommunity.lsp.lspsaga-nvim"},
+  -- Dont use|Disable the extracursor if you can: This causes some crazy distracting extra dot cursor alongside normal one at the end of the file
+  -- { import = "astrocommunity.lsp.lspsaga-nvim"},
   --
   -- { import = "astrocommunity.scrolling.vim-smoothie" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
