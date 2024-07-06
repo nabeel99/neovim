@@ -78,7 +78,7 @@ return {
   { import = "astrocommunity.lsp.nvim-lsp-file-operations" },
   -- { import = "astrocommunity.lsp.nvim-lsp-endhints" },
   { import = "astrocommunity.lsp.nvim-lint" },
-  { import = "astrocommunity.lsp.lspsaga"},
+  { import = "astrocommunity.lsp.lspsaga-nvim"},
   --
   -- { import = "astrocommunity.scrolling.vim-smoothie" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
@@ -99,7 +99,6 @@ return {
 
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
-  { import = "astrocommunity.file-explorer.mini-files" },
 
 
   { import = "astrocommunity.icon.mini-icons" },
