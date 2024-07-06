@@ -101,7 +101,8 @@ return {
   { import = "astrocommunity.file-explorer.oil-nvim" },
 
 
-  { import = "astrocommunity.icon.mini-icons" },
+  -- Looks terrible
+  -- { import = "astrocommunity.icon.mini-icons" },
 
 
   -- Register
@@ -289,7 +290,8 @@ return {
       },
     },
   },
-  { import = "astrocommunity.completion.coq_nvim" },
+  -- Too distracting
+  -- { import = "astrocommunity.completion.coq_nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.copilot-lua" },
   {
