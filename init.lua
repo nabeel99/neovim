@@ -19,4 +19,7 @@ require "lazy_setup"
 require "polish"
 
 -- My custom stuff
+require('mappings.neovide').setup()
 require('mappings.my_custom_commands').setup()
+
+
