@@ -248,11 +248,11 @@ return {
   --
 
 -- openingh-nvim
-  { import = "astrocommunity.git.blame-nvim" },
+  -- { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   -- { import = "astrocommunity.git.fugit2-nvim" },
   { import = "astrocommunity.git.gist-nvim" },
-  { import = "astrocommunity.git.git-blame-nvim" },
+  -- { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.gitlinker-nvim" },
   { import = "astrocommunity.git.mini-git" },
   { import = "astrocommunity.git.neogit" },
