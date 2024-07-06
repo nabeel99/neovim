@@ -124,6 +124,7 @@
   "venv-selector.nvim": { "branch": "regexp", "commit": "9cbb76e10abed4fff32d015472e7996fd999c996" },
   "vim-code-dark": { "branch": "master", "commit": "4624dc223bf574aa9a731c2383c579847303c380" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
+  "vim-move": { "branch": "master", "commit": "3c4195de0748da9bba25c54d78d959d349e93c55" },
   "vim-repeat": { "branch": "master", "commit": "24afe922e6a05891756ecf331f39a1f6743d3d5a" },
   "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
   "vim-visual-multi": { "branch": "master", "commit": "38b0e8d94a5499ccc17d6159763d32c79f53417b" },
