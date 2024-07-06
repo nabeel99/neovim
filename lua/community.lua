@@ -62,7 +62,7 @@ return {
 -- lua/astrocommunity/code-runner
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.code-runner.executor-nvim" },
-  { import = "astrocommunity.code-runner.sniprun" },
+  -- { import = "astrocommunity.code-runner.sniprun" },
 
 -- lua/astrocommunity/lsp/lsp-lens-nvim
 -- actions-preview-nvim
@@ -250,7 +250,7 @@ return {
 -- openingh-nvim
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
-  { import = "astrocommunity.git.fugit2-nvim" },
+  -- { import = "astrocommunity.git.fugit2-nvim" },
   { import = "astrocommunity.git.gist-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.gitlinker-nvim" },
