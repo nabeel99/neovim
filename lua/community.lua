@@ -73,6 +73,10 @@ return {
   -- { import = "astrocommunity.scrolling.satellite-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
 
+
+  -- Register
+  { import = "astrocommunity.register.nvim-neoclip-lua" },
+
 -- lua/astrocommunity/game/leetcode-nvim
   { import = "astrocommunity.game.leetcode-nvim" },
   -- {
