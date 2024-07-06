@@ -86,7 +86,23 @@ return {
   -- { import = "astrocommunity.scrolling.neoscroll-nvim" },
   -- { import = "astrocommunity.scrolling.nvim-scrollbar" },
   -- { import = "astrocommunity.scrolling.satellite-nvim" },
+
   { import = "astrocommunity.editing-support.vim-visual-multi" },
+  { import = "astrocommunity.editing-support.vim-move" },
+  { import = "astrocommunity/editing-support.undotree" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  { import = "astrocommunity.editing-support.text-case-nvim" },
+  { import = "astrocommunity.editing-support.comment-box-nvim" },
+  { import = "astrocommunity.editing-support.bigfile-nvim" },
+  { import = "astrocommunity.editing-support.dial-nvim" },
+  { import = "astrocommunity.editing-support.yanky-nvim" },
+
+  { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
+  { import = "astrocommunity.file-explorer.mini-files" },
+
+
+  { import = "astrocommunity.icon.mini-icons" },
 
 
   -- Register
@@ -230,6 +246,22 @@ return {
   -- { import = "astrocommunity.note-taking.neorg" },
 
   -- { import = "astrocommunity.git.git-blame-nvim" },
+  --
+
+-- openingh-nvim
+  { import = "astrocommunity.git.blame-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.fugit2-nvim" },
+  { import = "astrocommunity.git.gist-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.git.gitlinker-nvim" },
+  { import = "astrocommunity.git.mini-git" },
+  { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.nvim-tinygit" },
+  { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.git.openingh-nvim" },
+
+
 
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.colorscheme.nightfox",        enabled = false },
@@ -258,6 +290,7 @@ return {
       },
     },
   },
+  { import = "astrocommunity.completion.coq_nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.copilot-lua" },
   {
