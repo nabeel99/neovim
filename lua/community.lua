@@ -64,6 +64,21 @@ return {
   { import = "astrocommunity.code-runner.executor-nvim" },
   { import = "astrocommunity.code-runner.sniprun" },
 
+-- lua/astrocommunity/lsp/lsp-lens-nvim
+-- actions-preview-nvim
+  { import = "astrocommunity.lsp.lsp-lens-nvim" },
+  { import = "astrocommunity.lsp.actions-preview-nvim" },
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
+  { import = "astrocommunity.lsp.inc-rename-nvim" },
+  { import = "astrocommunity.lsp.garbage-day-nvim" },
+  { import = "astrocommunity.lsp.delimited-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.lsp.lsplinks-nvim" },
+  { import = "astrocommunity.lsp.ts-error-translator-nvim" },
+  { import = "astrocommunity.lsp.nvim-lsp-file-operations" },
+  -- { import = "astrocommunity.lsp.nvim-lsp-endhints" },
+  { import = "astrocommunity.lsp.nvim-lint" },
+  { import = "astrocommunity.lsp.lspsaga"},
   --
   -- { import = "astrocommunity.scrolling.vim-smoothie" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
@@ -75,6 +90,7 @@ return {
 
 
   -- Register
+  -- Clipboard history. Find Copied text history
   { import = "astrocommunity.register.nvim-neoclip-lua" },
 
 -- lua/astrocommunity/game/leetcode-nvim
