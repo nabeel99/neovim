@@ -68,9 +68,11 @@ return {
 -- actions-preview-nvim
   { import = "astrocommunity.lsp.lsp-lens-nvim" },
   { import = "astrocommunity.lsp.actions-preview-nvim" },
-  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
+  -- Archived. Probably stop using
+  -- { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
-  { import = "astrocommunity.lsp.garbage-day-nvim" },
+  -- kills everything. My machine is powerful enough
+  -- { import = "astrocommunity.lsp.garbage-day-nvim" },
   { import = "astrocommunity.lsp.delimited-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.lsp.lsplinks-nvim" },
