@@ -27,11 +27,8 @@ local telescope_cmds = {
   w = { "<cmd>Telescope lsp_workspace_symbols<cr>", "Workspace Symbols" },
   x = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Dynamic Workspace Symbols" },
   D = { "<cmd>Telescope diagnostics<cr>", "Document Diagnostics" },
-
-
-
-
 }
+
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
