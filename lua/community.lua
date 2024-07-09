@@ -59,6 +59,11 @@ return {
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.html-css" },
 
+  -- Edit remotely
+  { import = "astrocommunity.remote-development.distant-nvim" },
+  { import = "astrocommunity.remote-development.netman-nvim" },
+  { import = "astrocommunity.remote-development.nvim-sftp-sync" },
+  --
 -- lua/astrocommunity/code-runner
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.code-runner.executor-nvim" },
