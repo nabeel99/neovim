@@ -8,6 +8,7 @@ function M.setup()
   local telescope_cmds = require("mappings.telescope")
   local visual_multi_cmds = require("mappings.visual-multicursor")
   local comment_box = require("mappings.comment-box")
+  local copilot_chat = require("mappings.copilot_chat")
 
   local main_menu = {
     k = { -- This is the key for the top-level menu
@@ -15,8 +16,9 @@ function M.setup()
       k = rust_cmds,  -- Submenu for Rust commands
       l = leetcode_cmds,  -- Submenu for LeetCode commands
       t = telescope_cmds,  -- Submenu for Telescope commands
-      v = visual_multi_cmds,  -- Submenu for Visual Multi commands
+      m = visual_multi_cmds,  -- Submenu for Visual Multi commands
       b = comment_box,  -- Submenu for Comment Box
+      c = copilot_chat,  -- Submenu for Copilot Box
     },
   }
 
