@@ -68,6 +68,10 @@ return {
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.code-runner.executor-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun" },
+  --
+  -- fuzzy-finder
+  -- Does not work and disables telescope. Not good
+  -- { import = "astrocommunity.fuzzy-finder.fzf-lua" },
 
 -- lua/astrocommunity/lsp/lsp-lens-nvim
 -- actions-preview-nvim
