@@ -1,6 +1,6 @@
 local wk = require("which-key")
 wk.add({
-  { "<leader>kc", group = "copilot_cmds" }, -- group for copilot commands
+  { "<leader>kc", group = "Copilot Chat" }, -- group for copilot commands
   { "<leader>kco", ":CopilotChatOpen<CR>", desc = "Open chat window" },
   { "<leader>kcc", ":CopilotChatClose<CR>", desc = "Close chat window" },
   { "<leader>kct", ":CopilotChatToggle<CR>", desc = "Toggle chat window" },

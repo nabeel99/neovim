@@ -1,6 +1,6 @@
 local wk = require("which-key")
 wk.add({
-  { "<leader>km", group = "visual_multi_cmds" }, -- group for visual multi commands
+  { "<leader>km", group = "Multiselect Visually" }, -- group for visual multi commands
   { "<leader>kmm", "<Plug>(VM-Find-Under)", desc = "Find Under Cursor" },
   { "<leader>kmM", "<Plug>(VM-Find-Subword-Under)", desc = "Find Subword Under Cursor" },
   { "<leader>kma", "<Plug>(VM-Select-All)", desc = "Select All Occurrences" },

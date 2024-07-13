@@ -1,6 +1,6 @@
 local wk = require("which-key")
 wk.add({
-  { "<leader>kk", group = "rust_cmds" }, -- group for rust commands
+  { "<leader>kk", group = "Rust" }, -- group for rust commands
   { "<leader>kkd", ":RustLsp debuggables<CR>", desc = "List debug targets" },
   { "<leader>kkD", ":RustLsp debug<CR>", desc = "Start debug session" },
   { "<leader>kkr", ":RustLsp runnables<CR>", desc = "List run targets" },

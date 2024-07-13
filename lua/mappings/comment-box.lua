@@ -1,6 +1,6 @@
 local wk = require("which-key")
 wk.add({
-  { "<leader>kb", group = "comment_box_cmds" }, -- group for comment box commands
+  { "<leader>kb", group = "Boxes For Comment" }, -- group for comment box commands
   { "<leader>kbb", desc = "Boxes" },
   { "<leader>kbb", desc = "Boxes Description" },
   { "<leader>kbbl", "<Cmd>CBllbox<CR>", desc = "Left Aligned Box" },
@@ -25,7 +25,7 @@ wk.add({
   { "<leader>ktcr", "<Cmd>CBcrline<CR>", desc = "Centered Right Text Titled Line" },
   { "<leader>ktrl", "<Cmd>CBrlline<CR>", desc = "Right Aligned Left Text Titled Line" },
   { "<leader>ktrc", "<Cmd>CBrcline<CR>", desc = "Right Aligned Centered Text Titled Line" },
-  { "<leader>krr", "<Cmd>CBrrline<CR>", desc = "Right Aligned Right Text Titled Line" },
+  { "<leader>ktrr", "<Cmd>CBrrline<CR>", desc = "Right Aligned Right Text Titled Line" },
   
   { "<leader>kbs", desc = "Simple Lines" },
   { "<leader>kbsl", "<Cmd>CBline<CR>", desc = "Simple Left Aligned Line" },
