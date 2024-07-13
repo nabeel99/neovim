@@ -1,33 +1,55 @@
-local telescope_cmds = {
-  name = "Telescope Commands",
-  f = { "<cmd>Telescope find_files<cr>", "Find Files" },
-  g = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
-  b = { "<cmd>Telescope buffers<cr>", "Find Buffers" },
-  h = { "<cmd>Telescope help_tags<cr>", "Help Tags" },
-  -- LSP related
--- Neovim LSP Pickers
--- Functions	Description
--- builtin.lsp_references	Lists LSP references for word under the cursor
--- builtin.lsp_incoming_calls	Lists LSP incoming calls for word under the cursor
--- builtin.lsp_outgoing_calls	Lists LSP outgoing calls for word under the cursor
--- builtin.lsp_document_symbols	Lists LSP document symbols in the current buffer
--- builtin.lsp_workspace_symbols	Lists LSP document symbols in the current workspace
--- builtin.lsp_dynamic_workspace_symbols	Dynamically Lists LSP for all workspace symbols
--- builtin.diagnostics	Lists Diagnostics for all open buffers or a specific buffer. Use option bufnr=0 for current buffer.
--- builtin.lsp_implementations	Goto the implementation of the word under the cursor if there's only one, otherwise show all options in Telescope
--- builtin.lsp_definitions	Goto the definition of the word under the cursor, if there's only one, otherwise show all options in Telescope
--- builtin.lsp_type_definitions	Goto the definition of the type of the word under the cursor, if there's only one, otherwise show all options in Telescope
-  r = { "<cmd>Telescope lsp_references<cr>", "Search References" },
-  I = { "<cmd>Telescope lsp_incoming_calls<cr>", "Incoming Calls" },
-  O = { "<cmd>Telescope lsp_outgoing_calls<cr>", "Outgoing Calls" },
-  d = { "<cmd>Telescope lsp_definitions<cr>", "Go to Definitions" },
-  t = { "<cmd>Telescope lsp_type_definitions<cr>", "Definition of current type" },
-  i = { "<cmd>Telescope lsp_implementations<cr>", "Go to Implementations" },
-  s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
-  w = { "<cmd>Telescope lsp_workspace_symbols<cr>", "Workspace Symbols" },
-  x = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Dynamic Workspace Symbols" },
-  D = { "<cmd>Telescope diagnostics<cr>", "Document Diagnostics" },
-}
+local wk = require("which-key")
+wk.add({
+  { "<leader>kt", group = "telescope_cmds" }, -- group for telescope commands
+  { "<leader>ktf", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+  { "<leader>ktg", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
+  { "<leader>ktb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
+  { "<leader>kth", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
+  { "<leader>ktr", "<cmd>Telescope lsp_references<cr>", desc = "Search References" },
+  { "<leader>ktI", "<cmd>Telescope lsp_incoming_calls<cr>", desc = "Incoming Calls" },
+  { "<leader>ktO", "<cmd>Telescope lsp_outgoing_calls<cr>", desc = "Outgoing Calls" },
+  { "<leader>ktd", "<cmd>Telescope lsp_definitions<cr>", desc = "Go to Definitions" },
+  { "<leader>ktt", "<cmd>Telescope lsp_type_definitions<cr>", desc = "Definition of current type" },
+  { "<leader>kti", "<cmd>Telescope lsp_implementations<cr>", desc = "Go to Implementations" },
+  { "<leader>kts", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Document Symbols" },
+  { "<leader>ktw", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "Workspace Symbols" },
+  { "<leader>ktx", "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", desc = "Dynamic Workspace Symbols" },
+  { "<leader>ktD", "<cmd>Telescope diagnostics<cr>", desc = "Document Diagnostics" },
+})
+
+
+
+
+-- local telescope_cmds = {
+--   name = "Telescope Commands",
+--   f = { "<cmd>Telescope find_files<cr>", "Find Files" },
+--   g = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
+--   b = { "<cmd>Telescope buffers<cr>", "Find Buffers" },
+--   h = { "<cmd>Telescope help_tags<cr>", "Help Tags" },
+--   -- LSP related
+-- -- Neovim LSP Pickers
+-- -- Functions	Description
+-- -- builtin.lsp_references	Lists LSP references for word under the cursor
+-- -- builtin.lsp_incoming_calls	Lists LSP incoming calls for word under the cursor
+-- -- builtin.lsp_outgoing_calls	Lists LSP outgoing calls for word under the cursor
+-- -- builtin.lsp_document_symbols	Lists LSP document symbols in the current buffer
+-- -- builtin.lsp_workspace_symbols	Lists LSP document symbols in the current workspace
+-- -- builtin.lsp_dynamic_workspace_symbols	Dynamically Lists LSP for all workspace symbols
+-- -- builtin.diagnostics	Lists Diagnostics for all open buffers or a specific buffer. Use option bufnr=0 for current buffer.
+-- -- builtin.lsp_implementations	Goto the implementation of the word under the cursor if there's only one, otherwise show all options in Telescope
+-- -- builtin.lsp_definitions	Goto the definition of the word under the cursor, if there's only one, otherwise show all options in Telescope
+-- -- builtin.lsp_type_definitions	Goto the definition of the type of the word under the cursor, if there's only one, otherwise show all options in Telescope
+--   r = { "<cmd>Telescope lsp_references<cr>", "Search References" },
+--   I = { "<cmd>Telescope lsp_incoming_calls<cr>", "Incoming Calls" },
+--   O = { "<cmd>Telescope lsp_outgoing_calls<cr>", "Outgoing Calls" },
+--   d = { "<cmd>Telescope lsp_definitions<cr>", "Go to Definitions" },
+--   t = { "<cmd>Telescope lsp_type_definitions<cr>", "Definition of current type" },
+--   i = { "<cmd>Telescope lsp_implementations<cr>", "Go to Implementations" },
+--   s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
+--   w = { "<cmd>Telescope lsp_workspace_symbols<cr>", "Workspace Symbols" },
+--   x = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Dynamic Workspace Symbols" },
+--   D = { "<cmd>Telescope diagnostics<cr>", "Document Diagnostics" },
+-- }
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
@@ -46,6 +68,6 @@ map('n', 'gd', "<cmd>Telescope lsp_definitions<cr>", opts)  -- Added mapping for
 
 -- map('n', 'grr', telescope_cmds.lr[1], opts)  -- Added mapping for grr
 
-return telescope_cmds
+-- return telescope_cmds
 
 
