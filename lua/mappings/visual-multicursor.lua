@@ -14,10 +14,14 @@ wk.add({
   { "<leader>kmQ", "<Plug>(VM-Remove)", desc = "Remove Current" },
   { "<leader>kmi", "<Plug>(VM-Insert)", desc = "Start Insert Mode" },
   { "<leader>kmA", "<Plug>(VM-Append)", desc = "Start Append Mode" },
-  { "<leader><D-d>", "<Plug>(VM-Add-Cursor-Down)", desc = "Add Cursor Down" },
-  { "<leader><D-u>", "<Plug>(VM-Add-Cursor-Up)", desc = "Add Cursor Up" },
-  { "<leader><C-Down>", "<Plug>(VM-Add-Cursor-Down)", desc = "Add Cursor Down" },
-  { "<leader><C-Up>", "<Plug>(VM-Add-Cursor-Up)", desc = "Add Cursor Up" },
+  { "<D-d>", "<Plug>(VM-Add-Cursor-Down)", desc = "Add Cursor Down" },
+  { "<D-u>", "<Plug>(VM-Add-Cursor-Up)", desc = "Add Cursor Up" },
+  { "<C-Down>", "<Plug>(VM-Add-Cursor-Down)", desc = "Add Cursor Down" },
+  { "<C-Up>", "<Plug>(VM-Add-Cursor-Up)", desc = "Add Cursor Up" },
+  -- { "<leader><D-d>", "<Plug>(VM-Add-Cursor-Down)", desc = "Add Cursor Down" },
+  -- { "<leader><D-u>", "<Plug>(VM-Add-Cursor-Up)", desc = "Add Cursor Up" },
+  -- { "<leader><C-Down>", "<Plug>(VM-Add-Cursor-Down)", desc = "Add Cursor Down" },
+  -- { "<leader><C-Up>", "<Plug>(VM-Add-Cursor-Up)", desc = "Add Cursor Up" },
 })
 
 
