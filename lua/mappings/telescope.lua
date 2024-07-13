@@ -1,6 +1,6 @@
 local wk = require("which-key")
 wk.add({
-  { "<leader>kt", group = "telescope_cmds" }, -- group for telescope commands
+  { "<leader>kt", group = "Telescope" }, -- group for telescope commands
   { "<leader>ktf", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
   { "<leader>ktg", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
   { "<leader>ktb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
