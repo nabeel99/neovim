@@ -20,9 +20,6 @@ require "polish"
 
 -- My custom stuff
 -- require('mappings.neovide').setup()
--- require('mappings.my_custom_commands').setup()
--- require('mappings.wh').setup()
-
 require("mappings.comment-box")
 require("mappings.copilot_chat")
 require("mappings.leetcode")
@@ -32,7 +29,7 @@ require("mappings.visual-multicursor")
 
 local wk = require("which-key")
 wk.add({
-  { "<leader>k", group = "All Commands" }, -- main group for all commands
+  { "<leader>k", group = "My Custom Commands" }, -- main group for all my custom commands
   -- Since each individual keymap file already sets up their respective keymaps under <leader>k
   -- We don't need to add more here
 })
