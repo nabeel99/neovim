@@ -7,6 +7,9 @@
 return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
+  dependencies = {
+    "folke/which-key.nvim",
+  },
   opts = {
     -- Configure core features of AstroNvim
     features = {
@@ -167,6 +170,14 @@ return {
       },
     },
   },
+
+   config = function(_, opts)
+    -- Load AstroCore configuration
+    require('astrocore').setup(opts)
+
+    -- Import custom mappings
+    require('mappings.commands').setup()
+  end 
 }
 
 
