@@ -1,7 +1,7 @@
 -- Alphabetical order Keyboard layout
 local wk = require("which-key")
 wk.add({
-  { "<leader>kl", group = "leetcode_cmds" }, -- group for leetcode commands
+  { "<leader>kl", group = "Leetcode" }, -- group for leetcode commands
   { "<leader>kla", ":Leet random<CR>", desc = "Open a random question" },
   { "<leader>kls", ":Leet submit<CR>", desc = "Submit the current question" },
   { "<leader>kld", ":Leet daily<CR>", desc = "Open today's question" },
