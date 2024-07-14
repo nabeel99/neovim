@@ -1,7 +1,7 @@
 {
   "AstroNvim": { "branch": "main", "commit": "fdd41ac828b02869700f752d59a5633fd438e653" },
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
-  "CopilotChat.nvim": { "branch": "canary", "commit": "82923efe22b604cf9c0cad0bb2a74aa9247755ab" },
+  "CopilotChat.nvim": { "branch": "canary", "commit": "6f143f210efd1f16d97c077b945c76b7d5fd0f8b" },
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
   "SchemaStore.nvim": { "branch": "main", "commit": "37274739232b6a888be7c6ca5f1a2d58510a9a84" },
   "actions-preview.nvim": { "branch": "master", "commit": "9f52a01c374318e91337697ebed51c6fae57f8a4" },
