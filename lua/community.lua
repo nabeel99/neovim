@@ -11,7 +11,6 @@ return {
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.cpp" },
@@ -283,25 +282,25 @@ return {
   { import = "astrocommunity.colorscheme.mini-base16" },
   -- { import = "astrocommunity.colorscheme.onigiri" },
   -- { import = "astrocommunity.colorscheme.tokyonight" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  {
-    -- further customize the options set by the community
-    "catppuccin",
-    opts = {
-      integrations = {
-        sandwich = false,
-        noice = true,
-        mini = true,
-        leap = true,
-        markdown = true,
-        neotest = true,
-        cmp = true,
-        overseer = true,
-        lsp_trouble = true,
-        ts_rainbow2 = true,
-      },
-    },
-  },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  -- {
+  --   -- further customize the options set by the community
+  --   "catppuccin",
+  --   opts = {
+  --     integrations = {
+  --       sandwich = false,
+  --       noice = true,
+  --       mini = true,
+  --       leap = true,
+  --       markdown = true,
+  --       neotest = true,
+  --       cmp = true,
+  --       overseer = true,
+  --       lsp_trouble = true,
+  --       ts_rainbow2 = true,
+  --     },
+  --   },
+  -- },
   -- Too distracting
   -- { import = "astrocommunity.completion.coq_nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
