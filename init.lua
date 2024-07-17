@@ -18,6 +18,7 @@ end
 require "lazy_setup"
 require "polish"
 
+
 -- My custom stuff
 -- require('mappings.neovide').setup()
 require("mappings.comment-box")
@@ -26,6 +27,7 @@ require("mappings.leetcode")
 require("mappings.rust")
 require("mappings.telescope")
 require("mappings.visual-multicursor")
+require("mappings.utilities")
 
 local wk = require("which-key")
 wk.add({
