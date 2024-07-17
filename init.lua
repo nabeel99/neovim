@@ -27,7 +27,8 @@ require("mappings.leetcode")
 require("mappings.rust")
 require("mappings.telescope")
 require("mappings.visual-multicursor")
-require("mappings.utilities")
+-- Diasabling this for now, messing up with neotree opening subtree automatically
+-- require("mappings.utilities")
 
 local wk = require("which-key")
 wk.add({
