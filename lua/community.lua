@@ -112,6 +112,8 @@ return {
   { import = "astrocommunity.file-explorer.oil-nvim" },
 
 
+  { import = "astrocommunity.test.vim-test" },
+
   -- Looks terrible
   -- { import = "astrocommunity.icon.mini-icons" },
 
