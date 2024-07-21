@@ -26,7 +26,8 @@ wk.add({
   { "<leader>kln", ":Leet session change<CR>", desc = "Change current session" },
   { "<leader>klm", ":Leet<CR>", desc = "Open LeetCode Menu" },
   { "<leader>klw", ":Leet cookie update<CR>", desc = "Update cookie" },
-  { "<leader>kle", ":Leet cookie delete<CR>", desc = "Delete cookie" },
+  -- I accidentally deleted a cookie once, so im commenting this out for now
+  -- { "<leader>kle", ":Leet cookie delete<CR>", desc = "Delete cookie" },
 })
 
 
