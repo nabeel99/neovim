@@ -27,6 +27,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.ruby" },
+  { import = "astrocommunity.pack.laravel" },
   -- { import = "astrocommunity.pack.haxe" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.nix" },
