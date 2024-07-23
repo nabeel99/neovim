@@ -28,6 +28,7 @@ require("mappings.rust")
 require("mappings.telescope")
 require("mappings.visual-multicursor")
 require("mappings.utilities")
+require("mappings.pomodoro")
 
 local wk = require("which-key")
 wk.add({
@@ -35,4 +36,6 @@ wk.add({
   -- Since each individual keymap file already sets up their respective keymaps under <leader>k
   -- We don't need to add more here
 })
+
+
 
