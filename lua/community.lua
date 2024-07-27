@@ -236,7 +236,10 @@ return {
 
   -- { import = "astrocommunity.editing-support.auto-save-nvim" },
 
-  { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.search.grug-far-nvim" },
+  { import = "astrocommunity.search.nvim-hlslens" },
+  { import = "astrocommunity.search.sad-nvim" },
   -- This plugin is problematic and collides with rust server to provide autocompletion
   -- { import = "astrocommunity.project.neoconf-nvim" },
 
