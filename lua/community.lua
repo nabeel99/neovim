@@ -12,6 +12,21 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.pack.rust" },
+              --   assist = {
+              --   importEnforceGranularity = true,
+              --   importPrefix = "crate",
+              -- },
+              -- completion = {
+              --   postfix = {
+              --     enable = false,
+              --   },
+              -- },
+              -- inlayHints = {
+              --   lifetimeElisionHints = {
+              --     enable = true,
+              --     useParameterNames = true,
+              --   },
+              -- },
   { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.kotlin" },
@@ -248,8 +263,10 @@ return {
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
 
-  { import = "astrocommunity.debugging.nvim-bqf" },
+
+  { import = "astrocommunity.quickfix.nvim-bqf" },
 
   -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   -- Introduces unnecessary noise to rust diagnostics, Probably already setup in astro default config
@@ -268,6 +285,7 @@ return {
 -- openingh-nvim
   -- { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.gitgraph-nvim" },
   -- { import = "astrocommunity.git.fugit2-nvim" },
   { import = "astrocommunity.git.gist-nvim" },
   -- { import = "astrocommunity.git.git-blame-nvim" },
