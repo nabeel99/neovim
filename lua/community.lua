@@ -74,6 +74,9 @@ return {
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.html-css" },
 
+  -- docker
+  { import = "astrocommunity.docker.lazydocker" },
+
   -- Edit remotely
   { import = "astrocommunity.remote-development.distant-nvim" },
   { import = "astrocommunity.remote-development.netman-nvim" },
