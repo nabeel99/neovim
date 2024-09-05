@@ -276,7 +276,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   { import = "astrocommunity.media.pets-nvim" },
-  -- { import = "astrocommunity.media.image-nvim" },
+  { import = "astrocommunity.media.image-nvim" },
 
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   --
