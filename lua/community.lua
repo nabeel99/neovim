@@ -142,7 +142,14 @@ return {
   { import = "astrocommunity.register.nvim-neoclip-lua" },
 
 -- lua/astrocommunity/game/leetcode-nvim
-  { import = "astrocommunity.game.leetcode-nvim" },
+  {
+    import = "astrocommunity.game.leetcode-nvim",
+    opts = {
+      lang = "python3",
+      image_support = true,
+      --
+     
+  },
   -- {
   --   "leetcode.nvim",
   --   ---@type string
