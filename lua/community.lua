@@ -147,8 +147,7 @@ return {
     opts = {
       lang = "python3",
       image_support = true,
-      --
-     
+    }
   },
   -- {
   --   "leetcode.nvim",
