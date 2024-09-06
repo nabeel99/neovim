@@ -247,6 +247,7 @@ return {
   { import = "astrocommunity.note-taking.obsidian-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.vimtex" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 
   -- Has some weird error messages for now
   -- { import = "astrocommunity.motion.mini-basics" },
@@ -281,8 +282,9 @@ return {
   -- Introduces unnecessary noise to rust diagnostics, Probably already setup in astro default config
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
+    { import = "astrocommunity.media.img-clip-nvim" },
+    { import = "astrocommunity.media.image-nvim" },
   { import = "astrocommunity.media.pets-nvim" },
-  { import = "astrocommunity.media.image-nvim" },
 
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   --
@@ -336,6 +338,7 @@ return {
   -- },
   -- Too distracting
   -- { import = "astrocommunity.completion.coq_nvim" },
+  { import = "astrocommunity.completion.avante-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.copilot-lua" },
   {
