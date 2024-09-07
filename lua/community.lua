@@ -246,9 +246,6 @@ return {
 
   { import = "astrocommunity.note-taking.obsidian-nvim" },
 
-  { import = "astrocommunity.markdown-and-latex.vimtex" },
-  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
-
   -- Has some weird error messages for now
   -- { import = "astrocommunity.motion.mini-basics" },
   { import = "astrocommunity.motion.leap-nvim" },
@@ -274,6 +271,9 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+
 
 
   { import = "astrocommunity.quickfix.nvim-bqf" },
