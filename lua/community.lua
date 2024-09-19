@@ -130,6 +130,13 @@ return {
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
 
+  { import = "astrocommunity.programming-language-support.csv-vim" },
+
+
+  -- # Adds color to the window separator. Dont really like it. It
+  -- doesnt move when window shifts
+  -- { import = "astrocommunity.split-and-window.colorful-winsep-nvim" },
+  { import = "astrocommunity.split-and-window.windows-nvim" },
 
   { import = "astrocommunity.test.vim-test" },
 
