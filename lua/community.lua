@@ -273,7 +273,7 @@ return {
   -- { import = "astrocommunity.project.neoconf-nvim" },
 
   { import = "astrocommunity.utility.noice-nvim" },
-  { import = "astrocommunity.utility.hover-nvim" },
+  -- { import = "astrocommunity.utility.hover-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
