@@ -11,6 +11,10 @@ vim.api.nvim_create_user_command('Rfinder',
 wk.add({
   { "<leader>ku", group = "Utility Functions For Common Stuff" }, -- group for Common Utility functions
   { "<leader>kuo", "<cmd>Rfinder<cr>", desc = "Open In MacOs Finder" },
+    -- This will remove any active search highlight until you initiate a new search. 
+    -- If you want to prevent the highlight from being persistent after each search, add this to your init.lua or init.vim:
+    -- vim.opt.hlsearch = false
+  { "<leader>kun", ":noh", desc = "Remove All Active Highlights" },
 })
 --
 --
