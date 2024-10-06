@@ -38,4 +38,7 @@ wk.add({
 })
 
 
-
+-- This will remove any active search highlight until you initiate a new search. 
+-- If you want to prevent the highlight from being persistent after each search, add this to your init.lua or init.vim:
+-- TODO: Cross-Check if this is necessary: Saturday 5 October 2024
+vim.opt.hlsearch = false
