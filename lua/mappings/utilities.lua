@@ -14,7 +14,7 @@ wk.add({
     -- This will remove any active search highlight until you initiate a new search. 
     -- If you want to prevent the highlight from being persistent after each search, add this to your init.lua or init.vim:
     -- vim.opt.hlsearch = false
-  { "<leader>kun", ":noh", desc = "Remove All Active Highlights" },
+  { "<leader>kun", "<cmd>:noh<cr>", desc = "Remove All Active Highlights" },
 })
 --
 --
