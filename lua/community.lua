@@ -346,12 +346,13 @@ return {
   -- },
   -- Too distracting
   -- { import = "astrocommunity.completion.coq_nvim" },
+  -- { import = "astrocommunity.completion.blink-cmp" },
+
   { import = "astrocommunity.completion.avante-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.copilot-lua" },
-  {
     -- further customize the options set by the community
-    "copilot.lua",
+  { "copilot.lua",
     opts = {
       suggestion = {
         keymap = {
