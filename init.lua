@@ -37,6 +37,8 @@ wk.add({
   -- We don't need to add more here
 })
 
+-- NOTE: Enter normal mode in terminal with jj but it's still unuseable
+-- vim.api.nvim_set_keymap("t", "jj", "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- This will remove any active search highlight until you initiate a new search. 
 -- If you want to prevent the highlight from being persistent after each search, add this to your init.lua or init.vim:
