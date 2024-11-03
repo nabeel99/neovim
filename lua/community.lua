@@ -74,6 +74,9 @@ return {
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.html-css" },
 
+  -- docker
+  { import = "astrocommunity.docker.lazydocker" },
+
   -- Edit remotely
   { import = "astrocommunity.remote-development.distant-nvim" },
   { import = "astrocommunity.remote-development.netman-nvim" },
@@ -127,6 +130,13 @@ return {
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
 
+  { import = "astrocommunity.programming-language-support.csv-vim" },
+
+
+  -- # Adds color to the window separator. Dont really like it. It
+  -- doesnt move when window shifts
+  -- { import = "astrocommunity.split-and-window.colorful-winsep-nvim" },
+  { import = "astrocommunity.split-and-window.windows-nvim" },
 
   { import = "astrocommunity.test.vim-test" },
 
@@ -139,7 +149,13 @@ return {
   { import = "astrocommunity.register.nvim-neoclip-lua" },
 
 -- lua/astrocommunity/game/leetcode-nvim
-  { import = "astrocommunity.game.leetcode-nvim" },
+  {
+    import = "astrocommunity.game.leetcode-nvim",
+    opts = {
+      lang = "python3",
+      image_support = true,
+    }
+  },
   -- {
   --   "leetcode.nvim",
   --   ---@type string
@@ -237,8 +253,6 @@ return {
 
   { import = "astrocommunity.note-taking.obsidian-nvim" },
 
-  { import = "astrocommunity.markdown-and-latex.vimtex" },
-
   -- Has some weird error messages for now
   -- { import = "astrocommunity.motion.mini-basics" },
   { import = "astrocommunity.motion.leap-nvim" },
@@ -259,11 +273,15 @@ return {
   -- { import = "astrocommunity.project.neoconf-nvim" },
 
   { import = "astrocommunity.utility.noice-nvim" },
+  -- { import = "astrocommunity.utility.hover-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+
 
 
   { import = "astrocommunity.quickfix.nvim-bqf" },
@@ -272,8 +290,9 @@ return {
   -- Introduces unnecessary noise to rust diagnostics, Probably already setup in astro default config
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
+    { import = "astrocommunity.media.img-clip-nvim" },
+    { import = "astrocommunity.media.image-nvim" },
   { import = "astrocommunity.media.pets-nvim" },
-  -- { import = "astrocommunity.media.image-nvim" },
 
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   --
@@ -327,11 +346,13 @@ return {
   -- },
   -- Too distracting
   -- { import = "astrocommunity.completion.coq_nvim" },
+  -- { import = "astrocommunity.completion.blink-cmp" },
+
+  { import = "astrocommunity.completion.avante-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.copilot-lua" },
-  {
     -- further customize the options set by the community
-    "copilot.lua",
+  { "copilot.lua",
     opts = {
       suggestion = {
         keymap = {
