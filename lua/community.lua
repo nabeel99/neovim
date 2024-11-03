@@ -6,7 +6,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
- -- NOTE: Never ever use neodim plugin, drags and slows down my editor
+  -- NOTE: Never ever use neodim plugin, drags and slows down my editor
   -- Add the community repository of plugin specifications
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
@@ -82,7 +82,7 @@ return {
   { import = "astrocommunity.remote-development.netman-nvim" },
   { import = "astrocommunity.remote-development.nvim-sftp-sync" },
   --
--- lua/astrocommunity/code-runner
+  -- lua/astrocommunity/code-runner
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.code-runner.executor-nvim" },
   -- { import = "astrocommunity.code-runner.sniprun" },
@@ -91,8 +91,8 @@ return {
   -- Does not work and disables telescope. Not good
   -- { import = "astrocommunity.fuzzy-finder.fzf-lua" },
 
--- lua/astrocommunity/lsp/lsp-lens-nvim
--- actions-preview-nvim
+  -- lua/astrocommunity/lsp/lsp-lens-nvim
+  -- actions-preview-nvim
   { import = "astrocommunity.lsp.lsp-lens-nvim" },
   { import = "astrocommunity.lsp.actions-preview-nvim" },
   -- Archived. Probably stop using
@@ -142,7 +142,6 @@ return {
 
   -- Looks terrible
   -- { import = "astrocommunity.icon.mini-icons" },
-
 
   -- Register
   -- Clipboard history. Find Copied text history
@@ -301,7 +300,7 @@ return {
   -- { import = "astrocommunity.git.git-blame-nvim" },
   --
 
--- openingh-nvim
+  -- openingh-nvim
   -- { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.git.gitgraph-nvim" },
@@ -315,12 +314,10 @@ return {
   { import = "astrocommunity.git.octo-nvim" },
   { import = "astrocommunity.git.openingh-nvim" },
 
-
-
   { import = "astrocommunity.colorscheme.vscode-nvim" },
-  { import = "astrocommunity.colorscheme.nightfox",        enabled = false },
-  { import = "astrocommunity.colorscheme.kanagawa",        enabled = false },
-  { import = "astrocommunity.colorscheme.rose-pine",       enabled = false },
+  { import = "astrocommunity.colorscheme.nightfox", enabled = false },
+  { import = "astrocommunity.colorscheme.kanagawa", enabled = false },
+  { import = "astrocommunity.colorscheme.rose-pine", enabled = false },
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.mini-base16" },
   -- { import = "astrocommunity.colorscheme.onigiri" },
@@ -354,6 +351,7 @@ return {
     -- further customize the options set by the community
   { "copilot.lua",
     opts = {
+      enabled = false,
       suggestion = {
         keymap = {
           accept = "<C-l>",
@@ -370,6 +368,3 @@ return {
   { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
 }
-
-
-

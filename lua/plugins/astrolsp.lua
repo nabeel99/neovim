@@ -18,7 +18,7 @@ return {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true,    -- enable or disable format on save globally
+        enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
         },
@@ -43,20 +43,24 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-        settings = {
-          -- Add clippy lints for Rust.
-          ["rust-analyzer"] = {
-           cargo = {
-              extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = 'dev', },
-              extraArgs = { "--profile", "rust-analyzer", },
-            },
-            checkOnSave = {
-              allFeatures = true,
-              command = "clippy",
-              extraArgs = { "--no-deps" },
-            },
+      settings = {
+        -- Add clippy lints for Rust.
+        ["rust-analyzer"] = {
+          cargo = {
+            extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = "dev" },
+
+            extraArgs = { "--profile", "rust-analyzer" },
+            -- to passm ultiple use , instead of []
+            features = { "testing" },
+          },
+          checkOnSave = {
+            -- allFeatures = true,
+            features = { "testing" },
+            command = "clippy",
+            extraArgs = { "--no-deps" },
           },
         },
+      },
     },
     -- customize how language servers are attached
     handlers = {
