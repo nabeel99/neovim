@@ -50,7 +50,7 @@ return {
             extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = "dev" },
 
             extraArgs = { "--profile", "rust-analyzer" },
-            -- to passm ultiple use , instead of []
+            -- to passm ultiple use {} , instead of []
             features = { "testing" },
           },
           checkOnSave = {
