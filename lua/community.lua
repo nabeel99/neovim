@@ -117,6 +117,9 @@ return {
   -- { import = "astrocommunity.scrolling.nvim-scrollbar" },
   -- { import = "astrocommunity.scrolling.satellite-nvim" },
 
+  -- sticky scroll context
+  { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  -- { import = "astrocommunity.editing-support.nvim-context-vt" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity/editing-support.undotree" },
