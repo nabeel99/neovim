@@ -1,5 +1,7 @@
 -- Smooth cursor movement.
-return {
-  "sphamba/smear-cursor.nvim",
-  opts = {},
-}
+-- Sounds like a good idea, but it's not working for me.
+-- Slows down cursor movement and makes it jerky.
+-- return {
+--   "sphamba/smear-cursor.nvim",
+--   opts = {},
+-- }
