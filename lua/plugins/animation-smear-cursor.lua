@@ -1,7 +1,14 @@
 -- Smooth cursor movement.
 -- Sounds like a good idea, but it's not working for me.
 -- Slows down cursor movement and makes it jerky.
--- return {
---   "sphamba/smear-cursor.nvim",
---   opts = {},
--- }
+return {
+  "sphamba/smear-cursor.nvim",
+-- tune the smear dynamics to be snappier
+  opts = {                         -- Default  Range
+    stiffness = 0.8,               -- 0.6      [0, 1]
+    trailing_stiffness = 0.6,      -- 0.3      [0, 1]
+    trailing_exponent = 0,         -- 0.1      >= 0
+    distance_stop_animating = 0.5, -- 0.1      > 0
+    hide_target_hack = false,      -- true     boolean
+  },
+}
