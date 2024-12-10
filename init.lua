@@ -28,6 +28,7 @@ require("mappings.rust")
 require("mappings.telescope")
 require("mappings.visual-multicursor")
 require("mappings.utilities")
+require("mappings.oil")
 require("mappings.pomodoro")
 
 local wk = require("which-key")
