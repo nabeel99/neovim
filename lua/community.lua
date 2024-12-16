@@ -355,9 +355,28 @@ return {
   -- { import = "astrocommunity.completion.blink-cmp" },
 
   { import = "astrocommunity.completion.avante-nvim" },
+  {
+    "avante.nvim",
+    opts = {
+      -- add any opts here
+      -- provider = "copilot",
+      -- auto_suggestions_provider = "copilot",
+      provider = "ollama",
+      auto_suggestions_provider = "ollama",
+      vendors = {
+        ollama = {
+          __inherited_from = "openai",
+          api_key_name = "",
+          endpoint = "http://127.0.0.1:11434/v1",
+          -- model = "codegemma",
+          model = "qwen2.5-coder",
+        },
+      },
+    }
+  },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.copilot-lua" },
-    -- further customize the options set by the community
+  --   -- further customize the options set by the community
   { "copilot.lua",
     opts = {
       suggestion = {
