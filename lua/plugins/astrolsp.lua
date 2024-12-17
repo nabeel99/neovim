@@ -37,6 +37,7 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
+      "rust-analyzer",
       -- "pyright"
     },
     -- customize language server configuration options passed to `lspconfig`
@@ -51,11 +52,21 @@ return {
 
             extraArgs = { "--profile", "rust-analyzer" },
             -- to passm ultiple use {} , instead of []
-            features = { "testing" },
+            -- features = { "testing" },
+            allFeatures = true,
+            completion = {
+							postfix = {
+								enable = true,
+							},
+          },
+          diagnostic = {
+            enable = true,
+            experimental = {
+              enable = true,
+            },
           },
           checkOnSave = {
-            -- allFeatures = true,
-            features = { "testing" },
+            -- features = { "--testing" },
             command = "clippy",
             extraArgs = { "--no-deps" },
           },

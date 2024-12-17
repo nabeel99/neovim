@@ -18,29 +18,28 @@ end
 require "lazy_setup"
 require "polish"
 
-
 -- My custom stuff
 -- require('mappings.neovide').setup()
-require("mappings.comment-box")
-require("mappings.copilot_chat")
-require("mappings.leetcode")
-require("mappings.rust")
-require("mappings.telescope")
-require("mappings.visual-multicursor")
-require("mappings.utilities")
-require("mappings.pomodoro")
+require "mappings.comment-box"
+require "mappings.copilot_chat"
+require "mappings.leetcode"
+require "mappings.rust"
+require "mappings.telescope"
+require "mappings.visual-multicursor"
+require "mappings.utilities"
+require "mappings.pomodoro"
 
-local wk = require("which-key")
-wk.add({
+local wk = require "which-key"
+wk.add {
   { "<leader>k", group = "My Custom Commands" }, -- main group for all my custom commands
   -- Since each individual keymap file already sets up their respective keymaps under <leader>k
   -- We don't need to add more here
-})
+}
 
 -- NOTE: Enter normal mode in terminal with jj but it's still unuseable
 -- vim.api.nvim_set_keymap("t", "jj", "<C-\\><C-n>", { noremap = true, silent = true })
 
--- This will remove any active search highlight until you initiate a new search. 
+-- This will remove any active search highlight until you initiate a new search.
 -- If you want to prevent the highlight from being persistent after each search, add this to your init.lua or init.vim:
 -- TODO: Cross-Check if this is necessary: Saturday 5 October 2024
 --
