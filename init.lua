@@ -46,3 +46,7 @@ wk.add({
 -- TODO: Cross-Check if this is necessary: Saturday 5 October 2024
 --
 vim.opt.hlsearch = false
+
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "

@@ -100,7 +100,7 @@ return {
   { import = "astrocommunity.docker.lazydocker" },
 
   -- Edit remotely
-  { import = "astrocommunity.remote-development.distant-nvim" },
+  -- { import = "astrocommunity.remote-development.distant-nvim" },
   -- This keeps crashing my nvim. Disable for now
   -- { import = "astrocommunity.remote-development.netman-nvim" },
   { import = "astrocommunity.remote-development.nvim-sftp-sync" },
