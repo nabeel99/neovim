@@ -10,11 +10,11 @@ require("lazy").setup({
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
     },
   },
-  { import = "community" },
+   { import = "community" },
   { import = "plugins" },
 } --[[@as LazySpec]], {
   -- Configure any other `lazy.nvim` configuration options here
-  install = { colorscheme = { "astrodark", "habamax" } },
+  install = { colorscheme = { "astrodark", "habamax", "tokyonight" } },
   ui = {
       backdrop = 100,
     },

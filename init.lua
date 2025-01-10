@@ -37,7 +37,9 @@ wk.add({
   -- Since each individual keymap file already sets up their respective keymaps under <leader>k
   -- We don't need to add more here
 })
-
+-- allow using arrow keys to navigate display lines
+vim.keymap.set('n', '<Up>', 'gk', { noremap = true })
+vim.keymap.set('n', '<Down>', 'gj', { noremap = true })
 -- NOTE: Enter normal mode in terminal with jj but it's still unuseable
 -- vim.api.nvim_set_keymap("t", "jj", "<C-\\><C-n>", { noremap = true, silent = true })
 

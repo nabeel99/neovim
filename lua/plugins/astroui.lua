@@ -9,7 +9,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "vscode",
+    colorscheme = "tokyonight",
     -- colorscheme = "astrodark",
     -- colorscheme = "codedark",
     -- colorscheme = "vim-code-dark",
