@@ -8,7 +8,7 @@ return {
       },
       diagnostics = {
         -- disable diagnostics virtual text
-        virtual_text = false,
+        virtual_text = true,
       },
     },
   },
