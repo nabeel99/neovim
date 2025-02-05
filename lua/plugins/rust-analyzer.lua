@@ -36,7 +36,7 @@ return {
               extraArgs = { "--profile", "rust-analyzer" },
               features = { 
                 -- "csr", "ssr", "hydrate",
-                -- "testing"
+                "testing"
               }, -- Enable the "ssr" feature
             },
             rustfmt = {
