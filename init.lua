@@ -37,6 +37,13 @@ wk.add({
   -- We don't need to add more here
 })
 
+vim.keymap.set('n', '<Up>', 'gk', { noremap = true })
+vim.keymap.set('n', '<Down>', 'gj', { noremap = true })
+-- vim.keymap.set('i', '<Up>', 'gk', { noremap = true })
+-- vim.keymap.set('i', '<Down>', 'gj', { noremap = true })
+vim.keymap.set('v', '<Up>', 'gk', { noremap = true })
+vim.keymap.set('v', '<Down>', 'gj', { noremap = true })
+
 
 -- This will remove any active search highlight until you initiate a new search. 
 -- If you want to prevent the highlight from being persistent after each search, add this to your init.lua or init.vim:
