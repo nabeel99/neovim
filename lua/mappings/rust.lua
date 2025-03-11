@@ -14,6 +14,7 @@ wk.add({
   { "<leader>kkc", ":RustLsp codeAction<CR>", desc = "Code actions" },
   { "<leader>kkh", ":RustLsp hover actions<CR>", desc = "Hover actions" },
   { "<leader>kke", ":RustLsp explainError<CR>", desc = "Explain error" },
+  { "<leader>kkE", ":RustLsp renderDiagnostic current<CR>", desc = "Render Error diagnostic" },
   { "<leader>kkC", ":RustLsp openCargo<CR>", desc = "Open Cargo.toml" },
   { "<leader>kko", ":RustLsp openDocs<CR>", desc = "Open online docs" },
   { "<leader>kkP", ":RustLsp parentModule<CR>", desc = "Parent module" },

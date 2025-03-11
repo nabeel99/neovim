@@ -130,8 +130,8 @@ return {
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
 
-  { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
-  { import = "astrocommunity.file-explorer.oil-nvim" },
+  -- { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
+  -- { import = "astrocommunity.file-explorer.oil-nvim" },
 
   { import = "astrocommunity.programming-language-support.csv-vim" },
 
@@ -321,14 +321,18 @@ return {
 
 
   { import = "astrocommunity.colorscheme.vscode-nvim" },
-  { import = "astrocommunity.colorscheme.nightfox",        enabled = false },
-  { import = "astrocommunity.colorscheme.kanagawa",        enabled = false },
-  { import = "astrocommunity.colorscheme.rose-pine",       enabled = false },
+  { import = "astrocommunity.colorscheme.nightfox-nvim",        enabled = true },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim",        enabled = true },
+    { import = "astrocommunity.colorscheme.kanagawa-paper-nvim",        enabled = true },
+  { import = "astrocommunity.colorscheme.rose-pine",       enabled = true },
+  { import = "astrocommunity.colorscheme.gruvbox-nvim",        enabled = true },
+  { import = "astrocommunity.colorscheme.gruvbox-baby",        enabled = true },
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.mini-base16" },
   -- { import = "astrocommunity.colorscheme.onigiri" },
-  -- { import = "astrocommunity.colorscheme.tokyonight" },
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.tokyodark-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
   -- {
   --   -- further customize the options set by the community
   --   "catppuccin",
@@ -351,24 +355,24 @@ return {
   -- { import = "astrocommunity.completion.coq_nvim" },
   -- { import = "astrocommunity.completion.blink-cmp" },
 
-  { import = "astrocommunity.completion.avante-nvim" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { import = "astrocommunity.completion.copilot-lua" },
+  -- { import = "astrocommunity.completion.avante-nvim" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- { import = "astrocommunity.completion.copilot-lua" },
     -- further customize the options set by the community
-  { "copilot.lua",
-    opts = {
-      suggestion = {
-        keymap = {
-          accept = "<C-l>",
-          accept_word = false,
-          accept_line = false,
-          next = "<C-.>",
-          prev = "<C-,>",
-          dismiss = "<C/>",
-        },
-      },
-    },
-  },
+  -- { "copilot.lua",
+  --   opts = {
+  --     suggestion = {
+  --       keymap = {
+  --         accept = "<C-l>",
+  --         accept_word = false,
+  --         accept_line = false,
+  --         next = "<C-.>",
+  --         prev = "<C-,>",
+  --         dismiss = "<C/>",
+  --       },
+  --     },
+  --   },
+  -- },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
